@@ -1,8 +1,8 @@
-#Reference for Accelerometer Mouse
+# Reference for Accelerometer Mouse
 
 This is going to be a reference document for my thoughts on this example .ino script using an Arduino Pro-like microcontroller and an accelerometer. While a gyroscope combined with this device will be better, the code in here is a good starting point.
 
-##Libraries
+## Libraries
 
 This code uses:
 
@@ -12,7 +12,7 @@ This code uses:
 
 The Adafruit and V-USB Libraries may easily be replaced, but separate forks should be compiled for each test to ensure that the code can work across not only diferent types but also microcontrollers from different vendors.
 
-##Structure
+## Structure
 
 The code is structured as:
 
@@ -30,13 +30,13 @@ The code is structured as:
 - - Call mouse function using processed values.
 - - Delay (not recommended, need new method)
 
-###Inside the Accelerometer Processing
+### Inside the Accelerometer Processing
 
 - Check that the Reading exceeds minimum threshold.
 - Move based on the distance of the movement in proportion to the maximum range.
 - Do this for X and Y.
 
-##Useful details
+## Useful details
 
 A Minimum Movement Threshold seems nececssary for an acceleration-only based approach, but should not be necessary for gyroscope. Replace this with a calibration step.
 
